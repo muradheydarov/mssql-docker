@@ -25,7 +25,4 @@ RUN update-locale LANG=en_US.UTF-8
 
 
 
-CMD /bin/bash 
-
-
-
+CMD /bin/bash -c "trap : TERM INT; sleep infinity & wait"
